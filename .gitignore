@@ -1,0 +1,11 @@
+# dist folder
+dist/
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+
+# Bower dependency directory (https://bower.io/)
+bower_components
