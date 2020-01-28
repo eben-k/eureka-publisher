@@ -1,16 +1,15 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import ReactDOM from 'react-dom';
 
-import article from './reducers/article';
-import PublisherApp from './layouts/PublisherApp';
+import Root from './containers/Root';
+import configureStore, { history } from './store/configureStore';
 
-const store = createStore(article);
+const target = document.getElementById('publisherAppRoot');
 
-render(
-  <Provider store={store}>
-    <PublisherApp />
-  </Provider>,
-  document.getElementById('publisherAppRoot')
+export const store = configureStore(window.__INITIAL_STATE__);
+
+const node = (
+  <Root history={history} store={store} />
 );
+
+ReactDOM.render(node, target);
