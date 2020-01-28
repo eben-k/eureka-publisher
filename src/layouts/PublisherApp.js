@@ -33,9 +33,9 @@ class PublisherApp extends Component {
   render() {
     console.log(this.props);
     let articleJSX = [];
-    for (let articleKey in this.props) {
+    for (let articleKey in this.props.article) {
 
-      const articleDetails = this.props[articleKey];
+      const articleDetails = this.props.article[articleKey];
       const currentArticleJSX = (
         <div key={articleKey}>
           <h2>{articleDetails.articleTitle}</h2>
