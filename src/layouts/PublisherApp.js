@@ -18,7 +18,9 @@ class PublisherApp extends Component {
     super(props);
   }
   UNSAFE_componentWillMount() {
-    this._fetch();
+    if (typeof window !== 'undefined') {
+      this._fetch();
+    }
   }
   async _fetch() {
     const articlesLength = await falcorModel
