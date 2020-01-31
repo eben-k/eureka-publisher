@@ -10,7 +10,7 @@ import RegisterView from '../views/RegisterView';
 export default () => (
   <Router>
     <Route component={CoreLayout} path='/'></Route>
-    <Route component={PublisherApp} exact path='/home' name='home'></Route>
+    <Route component={PublisherApp} exact path='/' name='home'></Route>
     <Route component={LoginView} exact path='/login' name='login'></Route>
     <Route component={DashboardView} exact path='/dashboard' name='dashboard'></Route>
     <Route component={RegisterView} exact path='/register' name='register'></Route>
