@@ -24,7 +24,7 @@
     "falcor-router": "^0.8.3",
     "formsy-react": "^1.1.5",
     "history": "^4.10.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.8.9",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
